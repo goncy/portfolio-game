@@ -1,28 +1,58 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+    <div id="wrapper">
+      <div id="nav">
+        <router-link to="/">
+          <i class="fa fa-home" />
+        </router-link>
+        <router-link to="/about">
+          <i class="fa fa-address-card" />
+        </router-link>
+      </div>
+      <transition
+        name="fade"
+        mode="out-in"
+      >
+        <keep-alive>
+          <router-view class="router" />
+        </keep-alive>
+      </transition>
     </div>
-    <router-view/>
   </div>
 </template>
 
 <style lang="scss">
-#app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+@import "./styles/theme.scss";
+
+#wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
+
 #nav {
-  padding: 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: $primary;
+  padding: 4px;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+
   a {
     font-weight: bold;
-    color: #2c3e50;
+    text-decoration: none;
+    color: $white;
+    font-size: 1.5rem;
+    padding: 0.25rem;
+    opacity: 0.5;
+    will-change: opacity;
+    transition: opacity 0.25s;
+
     &.router-link-exact-active {
-      color: #42b983;
+      text-decoration: underline;
+      opacity: 1;
     }
   }
 }

@@ -1,7 +1,28 @@
 {
   "root": true,
+  "env": {
+    "jest": true,
+    "node": true
+  },
+  "plugins": [
+    "vue",
+    "prettier"
+  ],
   "extends": [
-    "plugin:vue/essential",
-    "@vue/prettier"
-  ]
+    "eslint:recommended",
+    "plugin:vue/recommended",
+    "prettier"
+  ],
+  "rules": {
+    "vue/html-self-closing": 2,
+    "vue/html-closing-bracket-newline": [2, {"multiline": "always"}],
+    "prettier/prettier": [
+      "error",
+      {
+        "semi": true,
+        "bracketSpacing": false,
+        "trailingComma": "es5"
+      }
+    ]
+  }
 }
