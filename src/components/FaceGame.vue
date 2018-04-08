@@ -1,6 +1,6 @@
 <template>
   <div class="face-game">
-    <h2>Well {{ visitorName }}, which one is my photo?</h2>
+    <h2>Let's see {{ visitorName }}, which one is my photo?</h2>
     <div class="faces">
       <img
         src="@/assets/faces/chris.jpg"
@@ -56,8 +56,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../styles/variables.scss";
-
 .face-game {
   padding: 2rem;
   width: 100%;
@@ -73,11 +71,11 @@ export default {
       height: 150px;
       object-fit: contain;
       border-radius: 50%;
-      border: 2px solid $primary;
+      border: 2px solid var(--primary);
       cursor: pointer;
-      background: $white;
-      transition: transform 0.2s;
-      will-change: transform;
+      background: var(--light);
+      transition: transform 0.2s, border-color 0.2s;
+      will-change: transform 0.2s, border-color 0.2s;
       justify-self: center;
 
       &:hover {

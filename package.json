@@ -8,7 +8,9 @@
     "test": "vue-cli-service test",
     "e2e": "vue-cli-service e2e",
     "lint": "vue-cli-service lint",
-    "e2e:open": "vue-cli-service e2e:open"
+    "e2e:open": "vue-cli-service e2e:open",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "font-awesome": "^4.7.0",
@@ -30,6 +32,7 @@
     "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-prettier": "^2.6.0",
     "eslint-plugin-vue": "^4.4.0",
+    "gh-pages": "^1.1.0",
     "lint-staged": "^6.0.0",
     "node-sass": "^4.7.2",
     "prettier": "^1.11.1",

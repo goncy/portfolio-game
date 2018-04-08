@@ -43,11 +43,16 @@
       </ul>
     </div>
     <div class="actions">
-      <button @click="notify('Mmmmmm', 'Sure boi?')">Naw way</button>
-      <button @click="nextStep">Is that true? Give me your contact information please</button>
-      <button @click="notify('Sorry', 'Just press ctrl + q (cmd + q on mac), or throw away your phone if you are on mobile')">I'm {{ visitorName }}, stop wasting my time</button>
+      <touchable @click.native="notify('Mmmmmm', 'Sure boi?')">Naw way</touchable>
+      <touchable @click.native="nextStep">Is that true? Give me your contact information please</touchable>
+      <touchable @click.native="notify('Sorry', 'Just press ctrl + q (cmd + q on mac), or throw away your phone if you are on mobile')">I'm {{ visitorName }}, stop wasting my time</touchable>
       <external-link href="http://bfy.tw/HTkm">
-        <button role="button">I have an open JAVA position for you</button>
+        <touchable
+          class="nested"
+          role="button"
+        >
+          I have an open JAVA position for you
+        </touchable>
       </external-link>
     </div>
   </div>

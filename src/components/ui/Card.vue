@@ -5,12 +5,10 @@
 </template>
 
 <style lang="scss" scoped>
-@import "../../styles/variables.scss";
-
 .card {
-  background: $white;
+  background: var(--light);
   border-radius: 4px;
-  border: 1px solid lighten($color: $black, $amount: 70);
+  border: 1px solid var(--light-darkest);
   transition: transform 0.2s;
   will-change: transform;
 
@@ -26,7 +24,7 @@
   }
 
   a {
-    color: $primary;
+    color: var(--primary);
     text-decoration: none;
   }
 }

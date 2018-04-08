@@ -10,7 +10,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: $black;
+  color: var(--black);
   letter-spacing: 0;
   font-size: 1rem;
   line-height: 2rem;
@@ -66,17 +66,18 @@ a:link, a:visited {
 /* VENDORS */
 .toasts {
   padding: 10px;
-  margin: 0 5px 5px;
+  margin: 5px;
   font-size: 12px;
-  color: $white;
-  background: $primary;
-  border-left: 5px solid transparentize($color: $white, $amount: 0.5);
-  line-height: 1rem;
+  color: var(--light);
+  background: var(--primary);
+  line-height: 1.125rem;
+  will-change: background-color;
+  transition: background-color 0.2s;
 
   .notification-title {
     font-size: 16px;
     font-weight: 600;
-    margin-bottom: 0.25rem;
+    margin-bottom: 0.5rem;
   }
 
   .notification-content {
@@ -92,4 +93,17 @@ a:link, a:visited {
   stroke-linecap: round;
   stroke-linejoin: round;
   fill: none;
+}
+
+/* ANIMATIONS */
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-10px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
 }

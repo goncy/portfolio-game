@@ -1,6 +1,6 @@
 <template>
   <div class="contact-game">
-    <h2>How lucky you are {{ visitorName }}? But I left the worst for the end</h2>
+    <h2>How lucky you are? But I left the worst for the end</h2>
     <blockquote>Where can you find me?</blockquote>
     <div class="actions">
       <Card class="card">
@@ -48,12 +48,12 @@
             </external-link>
           </li>
         </ul>
-        <button
+        <touchable
           class="action primary"
-          @click="nextStep"
+          @click.native="nextStep"
         >
           This one?
-        </button>
+        </touchable>
       </Card>
       <Card class="card">
         <ul>
@@ -98,12 +98,12 @@
             </external-link>
           </li>
         </ul>
-        <button
+        <touchable
           class="action primary"
-          @click="notify('Emm', `That doesn't look like mine`)"
+          @click.native="notify('Emm', `That doesn't look like mine`)"
         >
           Seems legit
-        </button>
+        </touchable>
       </Card>
     </div>
   </div>
@@ -123,10 +123,6 @@ export default {
     notify: {
       type: Function,
       required: true,
-    },
-    visitorName: {
-      type: String,
-      default: "hacker",
     },
   },
 };

@@ -10,7 +10,7 @@
         class="name"
         maxlength="24"
       />
-      <button :disabled="!name">Next</button>
+      <touchable :disabled="!name">Next</touchable>
     </form>
   </div>
 </template>
@@ -62,6 +62,17 @@ export default {
 
     .name {
       margin-bottom: 4px;
+      border: 1px solid var(--light-darkest);
+      border-radius: 2px;
+      color: var(--black-lighter);
+      font-size: 24px;
+      padding: 8px;
+      will-change: border;
+      transition: border 0.5s;
+
+      &:focus {
+        border: 1px solid var(--primary);
+      }
     }
 
     button {

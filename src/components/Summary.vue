@@ -159,11 +159,28 @@
         <p>
           Now you know a lot about me, let me know something about you at
         </p>
+        <div class="medias">
+          <external-link href="mailto:gonzalo.pozzo4@gmail.com">
+            <i class="fa fa-envelope"/>
+          </external-link>
+          <external-link href="https://www.linkedin.com/in/gonzalopozzo/">
+            <i class="fa fa-linkedin-square"/>
+          </external-link>
+          <external-link href="tel:5491141634695">
+            <i class="fa fa-phone-square"/>
+          </external-link>
+          <external-link href="skype:gonzalo.pozzo4?userinfo">
+            <i class="fa fa-skype"/>
+          </external-link>
+          <external-link href="https://github.com/goncy">
+            <i class="fa fa-github"/>
+          </external-link>
+          <external-link href="https://twitter.com/goncy">
+            <i class="fa fa-twitter"/>
+          </external-link>
+        </div>
         <p>
-          List
-        </p>
-        <p>
-          See you tomorrow!
+          See you tomorrow {{ visitorName }}!
         </p>
       </div>
     </section>
@@ -172,6 +189,12 @@
 
 <script>
 export default {
+  props: {
+    visitorName: {
+      type: String,
+      default: "hacker",
+    },
+  },
   methods: {
     more: function(section) {
       window.scroll({
@@ -185,16 +208,16 @@ export default {
 
 
 <style lang="scss" scoped>
-@import "../styles/variables.scss";
-
 .summary {
   section {
     box-sizing: border-box;
     padding: 2rem;
     min-height: 100vh;
     font-size: 1rem;
-    background: $primary;
-    color: $white;
+    background-color: var(--primary);
+    will-change: background-color;
+    transition: background-color 0.2s;
+    color: var(--light);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -202,7 +225,7 @@ export default {
     position: relative;
 
     .more {
-      color: $white;
+      color: var(--light);
       position: absolute;
       bottom: 0;
       font-size: 48px;
@@ -210,19 +233,33 @@ export default {
     }
 
     &:nth-child(odd) {
-      background: $white;
-      color: $black;
+      background: var(--light);
+      color: var(--black);
 
       .more {
-        color: $primary;
+        color: var(--primary);
+        will-change: color;
+        transition: color 0.2s;
       }
     }
   }
 
   .avatar {
     border-radius: 50%;
-    border: 3px solid $primary;
+    border: 3px solid var(--primary);
     margin-bottom: 12px;
+    will-change: border-color;
+    transition: border-color 0.2s;
+  }
+
+  .medias {
+    a {
+      font-size: 2.5rem;
+      padding: 6px;
+      color: var(--primary);
+      will-change: color;
+      transition: color 0.2s;
+    }
   }
 }
 </style>

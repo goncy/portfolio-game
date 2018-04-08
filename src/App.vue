@@ -1,12 +1,17 @@
 <template>
-  <div id="app">
+  <div
+    id="app"
+    :style="{'--primary': primaryColor}"
+  >
     <div id="nav">
-      <a href="/">
-        <i class="fa fa-home" />
-      </a>
-      <a href="/about">
-        <i class="fa fa-address-card" />
-      </a>
+      <a
+        v-for="color in colors"
+        :style="{'background': color}"
+        :key="color"
+        class="color"
+        role="button"
+        @click="primaryColor = color"
+      />
     </div>
     <notifications
       classes="toasts"
@@ -42,6 +47,18 @@ import ExperienceGame from "@/components/ExperienceGame.vue";
 import ContactGame from "@/components/ContactGame.vue";
 import Summary from "@/components/Summary.vue";
 
+const STEPS = [
+  "VisitorType",
+  "VisitorName",
+  "VisitorIntro",
+  "FaceGame",
+  "ExperienceGame",
+  "ContactGame",
+  "Summary",
+];
+
+const COLORS = ["#42b983", "cornflowerblue", "#673AB7", "#E91E63"];
+
 export default {
   name: "Home",
   components: {
@@ -55,17 +72,11 @@ export default {
   },
   data: function() {
     return {
+      primaryColor: COLORS[0],
       visitorName: "not important person",
       currentStep: 0,
-      steps: [
-        "VisitorType",
-        "VisitorName",
-        "VisitorIntro",
-        "FaceGame",
-        "ExperienceGame",
-        "ContactGame",
-        "Summary",
-      ],
+      steps: STEPS,
+      colors: COLORS,
     };
   },
   beforeMount() {
@@ -88,6 +99,13 @@ export default {
 
       if (this.currentStep < this.steps.length - 1) {
         this.currentStep++;
+      }
+
+      if (this.currentStep === this.steps.length - 1) {
+        this.notify(
+          `Congratulations ${this.visitorName}!`,
+          `You passed all the tests, now you can have my information 🙌`
+        );
       }
     },
     lastStep: function() {
@@ -117,7 +135,13 @@ export default {
 </script>
 
 <style lang="scss">
-@import "./styles/theme.scss";
+:root {
+  --light: #fff;
+  --light-darker: whitesmoke;
+  --light-darkest: gainsboro;
+  --black-lighter: #292929;
+  --black: #212121;
+}
 
 #app {
   display: flex;
@@ -129,8 +153,7 @@ export default {
   position: fixed;
   top: 0;
   left: 0;
-  background: $primary;
-  padding: 4px;
+  background-color: var(--primary);
   display: flex;
   flex-direction: column;
   z-index: 1;
@@ -138,9 +161,17 @@ export default {
   a {
     font-weight: bold;
     text-decoration: none;
-    color: $white;
+    color: var(--light);
     font-size: 1.5rem;
     padding: 0.25rem;
+    margin: 4px;
+  }
+
+  .color {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin: 0;
+    cursor: pointer;
   }
 }
 

@@ -6,10 +6,10 @@
     <div>
       <span>So, are you ready?</span>
       <div class="actions">
-        <button @click="nextStep">Yes</button>
-        <button @click="nextStep">Sure</button>
-        <button @click="nextStep">Absolutely</button>
-        <button disabled>No</button>
+        <touchable @click.native="nextStep">Yes</touchable>
+        <touchable @click.native="nextStep">Sure</touchable>
+        <touchable @click.native="nextStep">Absolutely</touchable>
+        <touchable disabled>No</touchable>
       </div>
     </div>
   </div>
