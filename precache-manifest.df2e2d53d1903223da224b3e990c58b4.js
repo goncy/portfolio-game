@@ -16,7 +16,7 @@ self.__precacheManifest = [
     "url": "/portfolio-game/js/manifest.a87a17ce.js"
   },
   {
-    "revision": "1ca734aaeb8c66e91f9a75c5abcefbc1",
+    "revision": "b4b77d620d8892b5a1b3ec162cbe367e",
     "url": "/portfolio-game/index.html"
   },
   {
