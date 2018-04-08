@@ -86,7 +86,7 @@ export default {
         group: "notifications",
         duration: 5000,
         title: "Magic 💫",
-        text: "You arrived to last step with the magical Konami code 🕹",
+        text: "You arrived to the last step with the magical Konami code 🕹",
       });
     });
   },
