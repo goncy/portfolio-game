@@ -14,8 +14,13 @@
     "prettier"
   ],
   "rules": {
-    "vue/html-self-closing": 2,
-    "vue/html-closing-bracket-newline": [2, {"multiline": "always"}],
+    "vue/html-self-closing": ["error", {
+      "html": {
+        "void": "always",
+        "normal": "always",
+        "component": "always"
+      }
+    }],
     "prettier/prettier": [
       "error",
       {

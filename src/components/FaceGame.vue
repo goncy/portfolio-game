@@ -1,27 +1,27 @@
 <template>
   <div class="face-game">
-    <h2>Which one is my photo?</h2>
+    <h2>Well {{ visitorName }}, which one is my photo?</h2>
     <div class="faces">
       <img
         src="@/assets/faces/chris.jpg"
         alt="I am this one?"
         @click="onClick(false)"
-      >
+      />
       <img
         src="@/assets/faces/me.jpg"
         alt="I am this one?"
         @click="onClick(true)"
-      >
+      />
       <img
         src="@/assets/faces/loki.jpg"
         alt="I am this one?"
         @click="onClick(false)"
-      >
+      />
       <img
         src="@/assets/faces/chain.jpg"
         alt="I am this one?"
         @click="onClick(false)"
-      >
+      />
     </div>
   </div>
 </template>
@@ -38,6 +38,10 @@ export default {
       type: Function,
       required: true,
     },
+    visitorName: {
+      type: String,
+      default: "hacker",
+    },
   },
   methods: {
     onClick: function(correct) {
@@ -52,6 +56,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "../styles/variables.scss";
+
 .face-game {
   padding: 2rem;
   width: 100%;
@@ -67,9 +73,9 @@ export default {
       height: 150px;
       object-fit: contain;
       border-radius: 50%;
-      border: 2px solid #42b983;
+      border: 2px solid $primary;
       cursor: pointer;
-      background: white;
+      background: $white;
       transition: transform 0.2s;
       will-change: transform;
       justify-self: center;

@@ -1,40 +1,52 @@
 <template>
   <div class="contact-game">
-    <h2>How lucky you are? But i left the worst for the end</h2>
+    <h2>How lucky you are {{ visitorName }}? But I left the worst for the end</h2>
     <blockquote>Where can you find me?</blockquote>
     <div class="actions">
       <Card class="card">
         <ul>
-          <li><a
-            rel="noopener noreferrer"
-            class="item"
-            target="_blank"
-            href="https://github.com/goncy"
-          ><i class="fa fa-github"/>goncy</a></li>
-          <li><a
-            rel="noopener noreferrer"
-            class="item"
-            target="_blank"
-            href="https://www.linkedin.com/in/gonzalopozzo/"
-          ><i class="fa fa-linkedin"/>gonzalo.pozzo</a></li>
-          <li><a
-            rel="noopener noreferrer"
-            class="item"
-            target="_blank"
-            href="tel:+5491141634695"
-          ><i class="fa fa-phone"/>+5491141634695</a></li>
-          <li><a
-            rel="noopener noreferrer"
-            class="item"
-            target="_blank"
-            href="mailto:gonzalo.pozzo4@gmail.com"
-          ><i class="fa fa-envelope"/>gonzalo.pozzo4</a></li>
-          <li><a
-            rel="noopener noreferrer"
-            class="item"
-            target="_blank"
-            href="skype:gonzalo.pozzo4?userinfo"
-          ><i class="fa fa-skype"/>gonzalo.pozzo4</a></li>
+          <li>
+            <external-link
+              class="item"
+              href="https://github.com/goncy"
+            >
+              <i class="fa fa-github"/>goncy
+            </external-link>
+          </li>
+          <li>
+            <external-link
+              class="item"
+              href="https://www.linkedin.com/in/gonzalopozzo/"
+            >
+              <i class="fa fa-linkedin"/>gonzalo.pozzo
+            </external-link>
+          </li>
+          <li>
+            <external-link
+              class="item"
+              href="tel:+5491141634695"
+            >
+              <i class="fa fa-phone"/>+5491141634695
+            </external-link>
+          </li>
+          <li>
+            <external-link
+              class="item"
+              href="mailto:gonzalo.pozzo4@gmail.com"
+            >
+              <i class="fa fa-envelope"/>
+              gonzalo.pozzo4
+            </external-link>
+          </li>
+          <li>
+            <external-link
+              class="item"
+              href="skype:gonzalo.pozzo4?userinfo"
+            >
+              <i class="fa fa-skype"/>
+              gonzalo.pozzo4
+            </external-link>
+          </li>
         </ul>
         <button
           class="action primary"
@@ -45,41 +57,53 @@
       </Card>
       <Card class="card">
         <ul>
-          <li><a
-            rel="noopener noreferrer"
-            class="item"
-            target="_blank"
-            role="button"
-          ><i class="fa fa-github"/>notgoncy</a></li>
-          <li><a
-            rel="noopener noreferrer"
-            class="item"
-            target="_blank"
-            role="button"
-          ><i class="fa fa-linkedin"/>not.gonzalo.pozzo</a></li>
-          <li><a
-            rel="noopener noreferrer"
-            class="item"
-            target="_blank"
-            role="button"
-          ><i class="fa fa-phone"/>+5491144444444</a></li>
-          <li><a
-            rel="noopener noreferrer"
-            class="item"
-            target="_blank"
-            role="button"
-          ><i class="fa fa-envelope"/>not.gonzalo.pozzo4</a></li>
-          <li><a
-            rel="noopener noreferrer"
-            class="item"
-            target="_blank"
-            role="button"
-          ><i class="fa fa-skype"/>not.gonzalo.pozzo4</a></li>
+          <li>
+            <external-link
+              class="item"
+              role="button"
+            >
+              <i class="fa fa-github"/>notgoncy
+            </external-link>
+          </li>
+          <li>
+            <external-link
+              class="item"
+              role="button"
+            >
+              <i class="fa fa-linkedin"/>not.gonzalo.pozzo
+            </external-link>
+          </li>
+          <li>
+            <external-link
+              class="item"
+              role="button"
+            >
+              <i class="fa fa-phone"/>+5491144444444
+            </external-link>
+          </li>
+          <li>
+            <external-link
+              class="item"
+              role="button"
+            >
+              <i class="fa fa-envelope"/>not.gonzalo.pozzo4
+            </external-link>
+          </li>
+          <li>
+            <external-link
+              class="item"
+              role="button"
+            >
+              <i class="fa fa-skype"/>not.gonzalo.pozzo4
+            </external-link>
+          </li>
         </ul>
         <button
           class="action primary"
           @click="notify('Emm', `That doesn't look like mine`)"
-        >Seems legit</button>
+        >
+          Seems legit
+        </button>
       </Card>
     </div>
   </div>
@@ -99,6 +123,10 @@ export default {
     notify: {
       type: Function,
       required: true,
+    },
+    visitorName: {
+      type: String,
+      default: "hacker",
     },
   },
 };

@@ -1,15 +1,15 @@
 @import "../variables.scss";
 
 input {
-  border: 1px solid lighten($color: #312b38, $amount: 70);
+  border: 1px solid lighten($color: $black, $amount: 70);
   border-radius: 4px;
-  color: lighten($color: #312b38, $amount: 10);
+  color: lighten($color: $black, $amount: 10);
   font-size: 24px;
   padding: 8px;
   will-change: border;
   transition: border 0.5s;
 
   &:focus {
-    border: 1px solid #42b983;
+    border: 1px solid $primary;
   }
 }

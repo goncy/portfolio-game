@@ -1,81 +1,54 @@
 <template>
   <div class="experience-game">
     <h2>Well, that was a hard one, but this one is impossible</h2>
-    I'm all of this?:
+    Is this information about me correct?
     <div class="list">
       <ul>
         <li>Frontend developer</li>
         <li>Worked 1 year with Angular 1.5? (but doesn't want to work with it again)</li>
         <li>Solid React experience? (2.5 years working with it daily)</li>
-        <li>Some experience with Vue (I won the <a
-          rel="noopener noreferrer"
-          target="_blank"
-          href="https://twitter.com/aerolab/status/946100876942262272"
-        >Aerolab coding challenge</a>
+        <li>Some experience with Vue (I won the
+          <external-link href="https://twitter.com/aerolab/status/946100876942262272">
+            Aerolab coding challenge
+          </external-link>
           <span> with </span>
-          <a
-            href="https://github.com/goncy/aerolab-challenge"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <external-link href="https://github.com/goncy/aerolab-challenge">
             a Vue project
-          </a>)
+          </external-link>)
         </li>
         <li>Made some projects with GraphQL and would love to make more</li>
         <li>
           Like to teach and give lessons
-          (Like <a
-            rel="noopener noreferrer"
-            target="_blank"
-            href="https://github.com/goncy/ramda-lesson"
-          >Ramda</a>,
-          <a
-            rel="noopener noreferrer"
-            target="_blank"
-            href="https://github.com/goncy/cypress-lesson"
-          >Cypress</a>,
-          <a
-            rel="noopener noreferrer"
-            target="_blank"
-            href="https://github.com/goncy/recompose-lesson"
-          >Recompose</a>, etc.)
+          (Like
+          <external-link href="https://github.com/goncy/ramda-lesson">Ramda</external-link>,
+          <external-link href="https://github.com/goncy/cypress-lesson">Cypress</external-link>,
+          <external-link href="https://github.com/goncy/recompose-lesson">Recompose</external-link>
+          , etc.)
         </li>
         <li>
           Created apps to help community
-          (like <a
-            rel="noopener noreferrer"
-            target="_blank"
-            href="https://github.com/goncy/trency"
-          >Trency</a>
-          or <a
-            rel="noopener noreferrer"
-            target="_blank"
-            href="https://github.com/goncy/mapgen"
-          >Mapgen</a>)
+          (like
+          <external-link href="https://github.com/goncy/trency">Trency</external-link>
+          <span> or </span>
+          <external-link href="https://github.com/goncy/mapgen">Mapgen</external-link>
+          )
         </li>
         <li>
           Love to try new libs and frameworks in my free time (
-          <a
-            rel="noopener noreferrer"
-            target="_blank"
-            href="https://github.com/goncy"
-          >
+          <external-link href="https://github.com/goncy">
             +80 repos on GitHub
-          </a>)
+          </external-link>
+          )
         </li>
       </ul>
     </div>
     <div class="actions">
       <button @click="notify('Mmmmmm', 'Sure boi?')">Naw way</button>
       <button @click="nextStep">Is that true? Give me your contact information please</button>
-      <button @click="notify('Sorry', 'Just press ctrl + q (cmd + q on mac), or throw away your phone if you are on mobile')">Stop wasting my time</button>
-      <a
-        rel="noopener noreferrer"
-        target="_blank"
-        href="http://bfy.tw/HTkm"
-      >
+      <button @click="notify('Sorry', 'Just press ctrl + q (cmd + q on mac), or throw away your phone if you are on mobile')">I'm {{ visitorName }}, stop wasting my time</button>
+      <external-link href="http://bfy.tw/HTkm">
         <button role="button">I have an open JAVA position for you</button>
-      </a>
+      </external-link>
     </div>
   </div>
 </template>
@@ -91,6 +64,10 @@ export default {
     nextStep: {
       type: Function,
       required: true,
+    },
+    visitorName: {
+      type: String,
+      default: "hacker",
     },
   },
 };

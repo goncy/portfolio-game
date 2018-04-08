@@ -4,11 +4,12 @@
       <h2 class="title">What's your name?</h2>
       <small class="tiny">I will just sell it on the interwebs</small>
     </div>
-    <form @submit.prevent="nextStep">
+    <form @submit.prevent="submit">
       <input
         v-model="name"
         class="name"
-      >
+        maxlength="24"
+      />
       <button :disabled="!name">Next</button>
     </form>
   </div>
@@ -22,11 +23,21 @@ export default {
       type: Function,
       required: true,
     },
+    setVisitorName: {
+      type: Function,
+      required: true,
+    },
   },
   data: function() {
     return {
       name: "",
     };
+  },
+  methods: {
+    submit: function() {
+      this.setVisitorName(this.name);
+      this.nextStep();
+    },
   },
 };
 </script>

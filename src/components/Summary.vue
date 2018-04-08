@@ -6,7 +6,7 @@
           class="avatar"
           src="https://placehold.it/128x128"
           alt="Gonzalo Pozzo"
-        >
+        />
         <div>
           <h4>I'm Gonzalo Pozzo, a frontend developer from Buenos Aires, Argentina.</h4>
           <p>I usually work with the React / Redux stack, but i'm open to technologies like GraphQL, Elm or Vue.
@@ -21,42 +21,30 @@
     <section>
       <div>
         <p>We can spend a lot of time listing every work i made, or i can give you my
-          <a
+          <external-link
             href="https://github.com/goncy"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <span>GitHub</span>
-          </a>
+          > <span>GitHub</span>
+          </external-link>
           and some of the main projects I made.</p>
 
         <p>
           Like
-          <a
+          <external-link
             href="https://github.com/goncy/trency"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <span>Trency</span>
-          </a>
+          > <span>Trency</span>
+          </external-link>
           and
-          <a
+          <external-link
             href="https://github.com/goncy/trency-api"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <span>it's API</span>
-          </a>
+          > <span>it's API</span>
+          </external-link>
         <span>, used to locate trains in realtime for almost every station in Buenos Aires.</span></p>
         <p>
           Or
-          <a
+          <external-link
             href="https://github.com/goncy/mapgen"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <span>Mapgen</span>
-          </a>
+          > <span>Mapgen</span>
+          </external-link>
           <span>, a free service for ONGs and community services, used by fire departements, police, etc. Used also to promote 2 laws (I can talk more about this in our call tomorrow)</span>
         </p>
       </div>
@@ -74,13 +62,9 @@
         </p>
         <p>
           you can see the whole timeline in
-          <a
-            href="https://www.linkedin.com/in/gonzalopozzo/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <external-link href="https://www.linkedin.com/in/gonzalopozzo/">
             <span>my LinkedIN</span>
-          </a>
+          </external-link>
         </p>
       </div>
       <i
@@ -92,13 +76,9 @@
       <div>
         <p>
           Then i started working at
-          <a
-            href="http://www.etermax.com/es/home/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <external-link href="http://www.etermax.com/es/home/">
             <span>Etermax</span>
-          </a>
+          </external-link>
           in 2015.
         </p>
         <p>
@@ -118,15 +98,7 @@
     <section>
       <div>
         <p>
-          So, in 2016 I decided to go half-remote at
-          <a
-            href="http://www.madmobile.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <span>Mad mobile</span>
-          </a>
-          .
+          So, in 2016 I decided to go half-remote at <external-link href="http://www.madmobile.com/">Mad mobile</external-link>.
         </p>
         <p>
           It was my first approach to React and i loved it.
@@ -144,15 +116,7 @@
     <section>
       <div>
         <p>
-          So, in 2017 I decided to go full-remote at
-          <a
-            href="http://thenextad.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <span>The Next Ad</span>
-          </a>
-          .
+          So, in 2017 I decided to go full-remote at <external-link href="http://thenextad.com/">The Next Ad</external-link>.
         </p>
         <p>
           It was my first full remote job and I love it.

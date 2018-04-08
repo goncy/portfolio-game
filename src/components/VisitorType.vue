@@ -4,7 +4,7 @@
     <div class="actions">
       <button @click="nextStep">A recruiter</button>
       <button @click="lastStep">Someone that this CV UI & UX won't modify his/her decision to contact me, therefore my future economy and work life won't be affected if the super fun next steps are skipped</button>
-      <button @click="notify('Oh man', 'Just use the Konami code')">Just me debugging</button>
+      <button @click="notify('Oh man 🤦‍♂️', 'Just use the Konami code 🕹')">Just me debugging</button>
     </div>
   </div>
 </template>
