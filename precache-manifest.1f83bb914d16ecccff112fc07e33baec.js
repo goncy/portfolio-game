@@ -16,7 +16,7 @@ self.__precacheManifest = [
     "url": "/portfolio-game/js/manifest.a87a17ce.js"
   },
   {
-    "revision": "b4b77d620d8892b5a1b3ec162cbe367e",
+    "revision": "3b191abf85dc707bbd47d388255133da",
     "url": "/portfolio-game/index.html"
   },
   {
@@ -41,7 +41,7 @@ self.__precacheManifest = [
   },
   {
     "revision": "aead3f565f4bb045d7f3",
-    "url": "/portfolio-game/css/app.179b64a1.css"
+    "url": "/portfolio-game/css/app.5b7216ed.css"
   },
   {
     "revision": "65d45ebee021fb8d24971b25c3e0fdd9",
