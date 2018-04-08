@@ -1,6 +1,6 @@
 {
-  "name": "vue-whatever",
-  "short_name": "vue-whatever",
+  "name": "goncy-portfolio",
+  "short_name": "goncy-portfolio",
   "icons": [
     {
       "src": "/img/icons/android-chrome-192x192.png",
