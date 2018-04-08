@@ -68,8 +68,8 @@ a:link, a:visited {
   padding: 10px;
   margin: 5px;
   font-size: 12px;
-  color: var(--light);
-  background: var(--primary);
+  color: var(--light) !important;
+  background: var(--primary) !important;
   line-height: 1.125rem;
   will-change: background-color;
   transition: background-color 0.2s;
