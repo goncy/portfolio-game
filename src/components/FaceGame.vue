@@ -83,7 +83,7 @@ export default {
       }
 
       &:not(:last-child) {
-        margin-right: 8px;
+        margin: 8px;
       }
     }
   }
