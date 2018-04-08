@@ -4,7 +4,7 @@
       <div>
         <img
           class="avatar"
-          src="https://placehold.it/128x128"
+          src="../assets/faces/me.jpg"
           alt="Gonzalo Pozzo"
         />
         <div>
@@ -250,6 +250,8 @@ export default {
     margin-bottom: 12px;
     will-change: border-color;
     transition: border-color 0.2s;
+    max-width: 150px;
+    max-height: 150px;
   }
 
   .medias {
