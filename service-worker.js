@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.0.1/workbox-sw.js");
 
 importScripts(
-  "/portfolio-game/precache-manifest.20f77cb9d852ec8b8226d4b9452cf978.js"
+  "/portfolio-game/precache-manifest.b8b677808f1eb8eeecdf399f5df41fd9.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "vue-whatever"});
