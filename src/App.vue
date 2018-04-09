@@ -182,7 +182,7 @@ export default {
   justify-content: center;
 
   .wizard {
-    max-width: 100vw;
+    max-width: 800px;
     overflow-x: hidden;
   }
 }

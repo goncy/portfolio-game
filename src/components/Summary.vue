@@ -20,7 +20,7 @@
     </section>
     <section>
       <div>
-        <p>We can spend a lot of time listing every work i made, or i can give you my
+        <p>We can spend a lot of time listing every work I made, or I can give you my
           <external-link
             href="https://github.com/goncy"
           > <span>GitHub</span>
@@ -45,7 +45,7 @@
             href="https://github.com/goncy/mapgen"
           > <span>Mapgen</span>
           </external-link>
-          <span>, a free service for ONGs and community services, used by fire departements, police, etc. Used also to promote 2 laws (I can talk more about this in our call tomorrow)</span>
+          <span>, a free service for NGOs and community services, used by fire departements, police, etc. Used also to promote 2 laws (I can talk more about this in our call tomorrow)</span>
         </p>
       </div>
       <i
@@ -75,7 +75,7 @@
     <section>
       <div>
         <p>
-          Then i started working at
+          Then I started working at
           <external-link href="http://www.etermax.com/es/home/">
             <span>Etermax</span>
           </external-link>
@@ -83,7 +83,7 @@
         </p>
         <p>
           I learned a lot about working with a team and doing agile,
-          the project was made in Backbone and Marionette (and i don't want to go back to that).
+          the project was made in Backbone and Marionette (and I don't want to go back to that).
         </p>
         <p>
           I was spending 4 hours traveling to work, 2 going, 2 coming back,
@@ -101,11 +101,11 @@
           So, in 2016 I decided to go half-remote at <external-link href="http://www.madmobile.com/">Mad mobile</external-link>.
         </p>
         <p>
-          It was my first approach to React and i loved it.
-          Have been using it everyday since, i also learnt some cool things like Redux, Redux Saga and more!
+          It was my first approach to React and I loved it.
+          Have been using it everyday since, I also learnt some cool things like Redux, Redux Saga and more!
         </p>
         <p>
-          Unfortunately, they didn't have full remote option neither, and i really wanted to travel around the world...
+          Unfortunately, they didn't have full remote option neither, and I really wanted to travel around the world...
         </p>
       </div>
       <i
@@ -131,7 +131,7 @@
     <section>
       <div>
         <p>
-          But i always said, i never wanted to change my job when i changed it,
+          But I always said,Inever wanted to change my job when I changed it,
           it was really hard each time,
           but a good opportunity shouldn't be missed right?
         </p>
@@ -209,6 +209,8 @@ export default {
 
 <style lang="scss" scoped>
 .summary {
+  max-width: 100vw !important;
+
   section {
     box-sizing: border-box;
     padding: 2rem;
