@@ -81,6 +81,8 @@ export default {
   },
   beforeMount() {
     Mousetrap.bind("up up down down left right left right b a enter", () => {
+      this.visitorName = "Konami magician";
+
       this.lastStep();
       this.$notify({
         group: "notifications",
