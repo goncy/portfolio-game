@@ -9,11 +9,11 @@
         <li>Solid React experience? (2.5 years working with it daily)</li>
         <li>Some experience with Vue (I won the
           <external-link href="https://twitter.com/aerolab/status/946100876942262272">
-            Aerolab coding challenge
+            <span>Aerolab coding challenge</span>
           </external-link>
           <span> with </span>
           <external-link href="https://github.com/goncy/aerolab-challenge">
-            a Vue project
+            <span>a Vue project</span>
           </external-link>)
         </li>
         <li>Made some projects with GraphQL and would love to make more</li>
@@ -36,7 +36,7 @@
         <li>
           Love to try new libs and frameworks in my free time (
           <external-link href="https://github.com/goncy">
-            +80 repos on GitHub
+            <span>+80 repos on GitHub</span>
           </external-link>
           )
         </li>
@@ -91,6 +91,11 @@ export default {
     text-align: left;
     max-width: 640px;
     margin: 1rem 0;
+    font-size: 1rem;
+
+    li {
+      white-space: nowrap;
+    }
   }
 
   .actions {

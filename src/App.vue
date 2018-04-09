@@ -147,6 +147,7 @@ export default {
   display: flex;
   flex-direction: column;
   width: 100%;
+  font-size: 1.125rem;
 }
 
 #nav {

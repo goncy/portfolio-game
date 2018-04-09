@@ -3,7 +3,7 @@
     <div>
       Well, <b>{{ visitorName }}</b>, welcome to my CV, if you want my ✨precious✨ information, you will need to pass 3 games <span class="striked tiny">or go to LinkedIN</span>.
     </div>
-    <div>
+    <div class="form">
       <span>So, are you ready?</span>
       <div class="actions">
         <touchable @click.native="nextStep">Yes</touchable>
@@ -36,7 +36,7 @@ export default {
   max-width: 640px;
   padding: 2rem;
 
-  form {
+  .form {
     margin-top: 1rem;
 
     .actions {
