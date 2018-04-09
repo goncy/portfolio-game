@@ -131,9 +131,9 @@
     <section>
       <div class="content">
         <p>
-          But I always said,Inever wanted to change my job when I changed it,
-          it was really hard each time,
-          but a good opportunity shouldn't be missed right?
+          I never wanted to change my job when I changed it,
+          it was really hard each time.
+          But a good opportunity shouldn't be missed right?
         </p>
       </div>
       <i
