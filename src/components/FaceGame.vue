@@ -59,6 +59,7 @@ export default {
 .face-game {
   padding: 2rem;
   width: 100%;
+  max-width: 800px;
 
   .faces {
     display: flex;

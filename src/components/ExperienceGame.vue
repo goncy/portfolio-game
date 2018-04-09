@@ -80,6 +80,7 @@ export default {
 
 <style lang="scss" scoped>
 .experience-game {
+  max-width: 800px;
   padding: 2rem;
   display: flex;
   flex-direction: column;

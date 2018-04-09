@@ -131,6 +131,7 @@ export default {
 <style lang="scss" scoped>
 .contact-game {
   padding: 2rem;
+  max-width: 640px;
 
   .actions {
     display: flex;

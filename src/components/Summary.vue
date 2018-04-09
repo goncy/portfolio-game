@@ -1,7 +1,7 @@
 <template>
   <div class="summary">
     <section>
-      <div>
+      <div class="content">
         <img
           class="avatar"
           src="../assets/faces/me.jpg"
@@ -19,7 +19,7 @@
       />
     </section>
     <section>
-      <div>
+      <div class="content">
         <p>We can spend a lot of time listing every work I made, or I can give you my
           <external-link
             href="https://github.com/goncy"
@@ -54,7 +54,7 @@
       />
     </section>
     <section>
-      <div>
+      <div class="content">
         <p>
           I started working on frontend in 2013, with jQuery and vanilla Javascript,
           picked Angular at mid 2014 as my first framework and
@@ -73,7 +73,7 @@
       />
     </section>
     <section>
-      <div>
+      <div class="content">
         <p>
           Then I started working at
           <external-link href="http://www.etermax.com/es/home/">
@@ -96,7 +96,7 @@
       />
     </section>
     <section>
-      <div>
+      <div class="content">
         <p>
           So, in 2016 I decided to go half-remote at <external-link href="http://www.madmobile.com/">Mad mobile</external-link>.
         </p>
@@ -114,7 +114,7 @@
       />
     </section>
     <section>
-      <div>
+      <div class="content">
         <p>
           So, in 2017 I decided to go full-remote at <external-link href="http://thenextad.com/">The Next Ad</external-link>.
         </p>
@@ -129,7 +129,7 @@
       />
     </section>
     <section>
-      <div>
+      <div class="content">
         <p>
           But I always said,Inever wanted to change my job when I changed it,
           it was really hard each time,
@@ -142,7 +142,7 @@
       />
     </section>
     <section>
-      <div>
+      <div class="content">
         <p>
           Well, today is your lucky day because you can have this bad boy,
           rockstar frontend developer working at your company for just a good project!
@@ -155,7 +155,7 @@
       />
     </section>
     <section>
-      <div>
+      <div class="content">
         <p>
           Now you know a lot about me, let me know something about you at
         </p>
@@ -209,7 +209,7 @@ export default {
 
 <style lang="scss" scoped>
 .summary {
-  max-width: 100vw !important;
+  max-width: 100vw;
 
   section {
     box-sizing: border-box;
@@ -225,6 +225,11 @@ export default {
     justify-content: center;
     flex-direction: column;
     position: relative;
+
+    .content {
+      max-width: 640px;
+      font-size: 1.125rem;
+    }
 
     .more {
       color: var(--light);

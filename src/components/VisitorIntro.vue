@@ -33,6 +33,7 @@ export default {
 
 <style lang="scss">
 .visitor-intro {
+  max-width: 640px;
   padding: 2rem;
 
   form {

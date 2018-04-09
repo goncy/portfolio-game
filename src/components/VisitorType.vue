@@ -31,6 +31,7 @@ export default {
 
 <style lang="scss" scoped>
 .visitor-type {
+  max-width: 640px;
   padding: 2rem;
 
   .actions {

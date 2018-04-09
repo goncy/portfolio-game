@@ -45,6 +45,7 @@ export default {
 <style lang="scss" scoped>
 .visitor-name {
   padding: 2rem;
+  max-width: 320px;
 
   .title {
     margin-bottom: 1rem;
