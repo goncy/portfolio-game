@@ -1,3 +1,6 @@
 module.exports = {
-  baseUrl: "/portfolio-game/",
+  // github
+  // baseUrl: "/portfolio-game/",
+  // gonzalopozzo.com
+  baseUrl: "/",
 };

@@ -92,10 +92,6 @@ export default {
     max-width: 640px;
     margin: 1rem 0;
     font-size: 1rem;
-
-    li {
-      white-space: nowrap;
-    }
   }
 
   .actions {

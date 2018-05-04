@@ -2,4 +2,4 @@
 
 Welcome to my game-made portfolio, made in Vue
 
-You can see it [here](https://goncy.github.io/portfolio-game/)
+You can see it [here](http://www.gonzalopozzo.com/)
