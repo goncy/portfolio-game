@@ -6,7 +6,7 @@
       <ul>
         <li>Frontend developer</li>
         <li>Worked 1 year with Angular 1.5? (but doesn't want to work with it again)</li>
-        <li>Solid React experience? (2.5 years working with it daily)</li>
+        <li>Solid React experience? ({{reactExperience}} years working with it daily)</li>
         <li>Some experience with Vue (I won the
           <external-link href="https://twitter.com/aerolab/status/946100876942262272">
             <span>Aerolab coding challenge</span>
@@ -14,7 +14,7 @@
           <span> with </span>
           <external-link href="https://github.com/goncy/aerolab-challenge">
             <span>a Vue project</span>
-          </external-link>)
+          </external-link>, also this CV is made in Vue)
         </li>
         <li>Made some projects with GraphQL and would love to make more</li>
         <li>
@@ -59,6 +59,8 @@
 </template>
 
 <script>
+import {diffInYears} from "../utils/date";
+
 export default {
   name: "ExperienceGame",
   props: {
@@ -73,6 +75,11 @@ export default {
     visitorName: {
       type: String,
       default: "hacker",
+    },
+  },
+  computed: {
+    reactExperience() {
+      return diffInYears("06/06/2016");
     },
   },
 };

@@ -10,7 +10,7 @@
         <div>
           <h4>I'm Gonzalo Pozzo, a frontend developer from Buenos Aires, Argentina.</h4>
           <p>I usually work with the React / Redux stack, but i'm open to technologies like GraphQL, Elm or Vue.
-          I'm 26 years old and I have a Multimedia Design degree from Escuela Davinci, I never stopped learning.</p>
+          I'm {{birthday}} years old and I have a Multimedia Design degree from Escuela Davinci, I never stopped learning.</p>
         </div>
       </div>
       <i
@@ -45,7 +45,7 @@
             href="https://github.com/goncy/mapgen"
           > <span>Mapgen</span>
           </external-link>
-          <span>, a free service for NGOs and community services, used by fire departements, police, etc. Used also to promote 2 laws (I can talk more about this in our call tomorrow)</span>
+          <span>, a free service for NGOs and community services, used by fire departements, police, etc. Used also to promote 2 laws (I can talk more about this in <external-link href="https://calendly.com/goncy/15"><span>our call tomorrow</span></external-link>)</span>
         </p>
       </div>
       <i
@@ -116,16 +116,44 @@
     <section>
       <div class="content">
         <p>
-          So, in 2017 I decided to go full-remote at <external-link href="http://thenextad.com/">The Next Ad</external-link>.
+          So, in 2017 I decided to go full remote at <external-link href="http://thenextad.com/">The Next Ad</external-link>.
         </p>
         <p>
-          It was my first full remote job and I love it.
+          It was my first full remote job and I loved it.
           I also went to the Amsterdam offices for 2 months and it was incredible!
         </p>
       </div>
       <i
         class="fa fa-caret-down more"
         @click="more(7)"
+      />
+    </section>
+    <section>
+      <div class="content">
+        <p>
+          In 2018 I started generating content, on <external-link href="https://twitter.com/goncy">Twitter</external-link>, <external-link href="https://twitch.tv/goncypozzo">Twitch</external-link>, <external-link href="https://blog.gonzalopozzo.com">my personal blog</external-link>, and I became a <external-link href="https://cypress.io/ambassadors/">Cypress.io Ambassador</external-link>!.
+        </p>
+        <p>
+          My path as a speaker also started and I even left my province for giving conferences (which was a big thing to me).
+        </p>
+      </div>
+      <i
+        class="fa fa-caret-down more"
+        @click="more(8)"
+      />
+    </section>
+    <section>
+      <div class="content">
+        <p>
+          Now, since 2019, I'm working on <external-link href="https://tradehelm.com/">Tradehelm</external-link>.
+        </p>
+        <p>
+          Met great people, made great progress on my professional career.
+        </p>
+      </div>
+      <i
+        class="fa fa-caret-down more"
+        @click="more(9)"
       />
     </section>
     <section>
@@ -138,7 +166,7 @@
       </div>
       <i
         class="fa fa-caret-down more"
-        @click="more(8)"
+        @click="more(10)"
       />
     </section>
     <section>
@@ -151,7 +179,7 @@
       </div>
       <i
         class="fa fa-caret-down more"
-        @click="more(9)"
+        @click="more(11)"
       />
     </section>
     <section>
@@ -178,6 +206,9 @@
           <external-link href="https://twitter.com/goncy">
             <i class="fa fa-twitter"/>
           </external-link>
+          <external-link href="https://twitch.tv/goncypozzo">
+            <i class="fa fa-twitch"/>
+          </external-link>
         </div>
         <p>
           See you tomorrow {{ visitorName }}!
@@ -188,6 +219,8 @@
 </template>
 
 <script>
+import {diffInYears} from "../utils/date"
+
 export default {
   props: {
     visitorName: {
@@ -203,6 +236,11 @@ export default {
       });
     },
   },
+  computed: {
+    birthday: function() {
+      return diffInYears("04/05/1992")
+    }
+  }
 };
 </script>
 
@@ -268,6 +306,10 @@ export default {
       color: var(--primary);
       will-change: color;
       transition: color 0.2s;
+
+      .fa.fa-twitch {
+        font-size: 2.2rem;
+      }
     }
   }
 }
