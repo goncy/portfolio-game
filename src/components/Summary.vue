@@ -145,15 +145,29 @@
     <section>
       <div class="content">
         <p>
-          Now, since 2019, I'm working on <external-link href="https://tradehelm.com/">Tradehelm</external-link>.
+          From 2019 to 2021 I worked at <external-link href="https://tradehelm.com/">Tradehelm</external-link>.
         </p>
         <p>
-          Met great people, made great progress on my professional career.
+          Met great people, made great progress on my professional career, learning new technologies, working with different architectures and being involved in challenges I have never been before.
         </p>
       </div>
       <i
         class="fa fa-caret-down more"
         @click="more(9)"
+      />
+    </section>
+    <section>
+      <div class="content">
+        <p>
+          In 2021 I made a master plan to get an interview at <external-link href="https://vercel.com/">Vercel</external-link>, and I made it!.
+        </p>
+        <p>
+          Since then I have been working as a Solutions Architect, learning lot of new things, super happy.
+        </p>
+      </div>
+      <i
+        class="fa fa-caret-down more"
+        @click="more(10)"
       />
     </section>
     <section>
@@ -166,7 +180,7 @@
       </div>
       <i
         class="fa fa-caret-down more"
-        @click="more(10)"
+        @click="more(11)"
       />
     </section>
     <section>
@@ -179,7 +193,7 @@
       </div>
       <i
         class="fa fa-caret-down more"
-        @click="more(11)"
+        @click="more(12)"
       />
     </section>
     <section>
