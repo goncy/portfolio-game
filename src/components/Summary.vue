@@ -317,7 +317,7 @@ export default {
     a {
       font-size: 2.5rem;
       padding: 6px;
-      color: var(--primary);
+      color: var(--light);
       will-change: color;
       transition: color 0.2s;
 
